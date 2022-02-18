@@ -26,16 +26,22 @@ body {
 }
 
 .footer {
+  padding-bottom: 15px;
   text-align: inherit;
   background-color: #2f303a;
-}
-li {
-  list-style-type: none;
+
+  
 }
 
 a {
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
 }
 .container {
   width: 1230px;
@@ -44,7 +50,8 @@ a {
   margin-right: auto;
     margin-left: auto;
 
-  outline: 4px solid blueviolet;
+    outline: 3px solid red ;
+
 }
 
 /* скрытие заголовка Преимущества Benefits компании */
@@ -119,7 +126,18 @@ margin-top: 60px;
 }
 .list {
   display: flex;
+  justify-content: center;
+  /* margin-top: 94px;
+  margin-bottom: 50px; */
+  
 }
+
+.list .list-item + .list-item {
+  margin-left: 8px;
+}
+
+
+
 .list-link-index,
 .list-link {
   padding-top: 32px;
@@ -206,7 +224,6 @@ margin-top: 60px;
   min-width: 200px;
   text-align: center;
 
-  outline: 2px solid red;
 
   background-color: var(--focus-button-color);
   color: var(--button-text-color);
@@ -227,15 +244,13 @@ margin-top: 60px;
   background-color: #188ce8;
 }
 .hero-text {
-  display: flex;
   margin: 0;
   justify-content: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 30px;
 
   align-items: center;
 
-  color: var(--button-text-color);
 
   font-style: normal;
   font-weight: 900;
@@ -335,7 +350,6 @@ margin-top: 94px;
   display: flex;
   justify-content: space-between;
 
-  background-color: rebeccapurple;
 }
 .main-content:not(:last-child) {
   margin-right: 30px;
@@ -373,6 +387,7 @@ margin-top: 94px;
   margin-top: 20px;
   width: 231px;
   text-align: inherit;
+  
 
 }
 
@@ -444,7 +459,29 @@ margin-top: 94px;
 
 /* галерея - примеры работ */
 
+.gallery {
+background-color: green;}
+.gallery-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 30px;
+
+  
+
+}
+
+.gallery-list:nth-child(3n){
+  margin-right: 0;
+}
+.gallery-list {
+  
+}
+.gallery-image:nth-last-child(-n+6) {
+  margin-top: 30px;
+}
 .gallery-image {
+
   width: 370px;
   height: 294px;
 }

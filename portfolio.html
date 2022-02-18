@@ -14,40 +14,55 @@
       rel="stylesheet"
     />
     <!-- нормализация стилей -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- мой шрифт -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
     <!-- Шапка -->
-    <header>
-      <!-- кнопки навигации  -->
-      <nav class="nav-list">
-        <a class="logo" href=""><span class="logo-link">Web</span>Studio</a>
-        <ul class="list">
-          <li class="nav-item">
-            <a class="list-link" href="./index.html">Студия</a>
-          </li>
-          <li class="nav-item">
-            <a class="list-link-portfolio" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-item"><a class="list-link" href="">Контакты</a></li>
-        </ul>
-      </nav>
 
-      <ul class="address">
-        <li class="address-item">
-          <a class="address-link" lang="en" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+    <header class="header">
+      <div class="container">
+        <!-- лого -->
+
+        <nav class="nav-list">
+          <a class="logo" href=""
+            ><span class="logo-link">Web</span
+            ><span class="logo-link-header"></span>Studio</a
           >
-        </li>
-        <li class="address-item">
-          <a class="address-link" href="tel:+380961111111">+380961111111</a>
-        </li>
-      </ul>
-    </header>
 
+          <!-- кнопки навигации  -->
+          <ul class="list">
+            <li class="nav-item">
+              <a class="list-link-index" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="list-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item"><a class="list-link" href="">Контакты</a></li>
+          </ul>
+
+          <ul class="address">
+            <li class="address-item">
+              <a class="address-link" lang="en" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-link" href="tel:+380961111111">+380961111111</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- уникальная часть Hero -->
     <main>
       <section>
@@ -55,6 +70,7 @@
         <h1 class="main-content-hidden">Портфолио</h1>
 
         <!-- Фильтры -->
+<div class="container">
 
         <ul class="list">
           <li class="list-item">
@@ -73,18 +89,17 @@
             <button class="button" type="button">Маркетинг</button>
           </li>
         </ul>
-
+      </div>
         <!-- примеры работ -->
-
-        <ul class="gallery">
+<div class="container">
+  <div class="gallery">
+        <ul class="gallery-item">
           <li class="gallery-list">
-            <a href=""
-              ><img
+            <a href=""><img
                 class="gallery-image"
                 src="./images/images/technokryk.jpg"
                 alt="Технокряк"
-                width="370"
-              />
+                width="370"/>
               <h2 class="gallery-caption">Технокряк</h2>
               <p class="gallery-text">Веб-сайт</p>
             </a>
@@ -160,7 +175,6 @@
               <h2 class="gallery-caption" lang="en">
                 Inspiration has no Borders
               </h2>
-              >
               <p class="gallery-text">Веб-сайт</p>
             </a>
           </li>
@@ -174,7 +188,7 @@
                 width="370"
               />
 
-              >
+              
               <h2 class="gallery-caption">
                 Издание <span lang="en"> Limited Edition</span>
               </h2>
@@ -213,11 +227,14 @@
             </a>
           </li>
         </ul>
+      </div>
+      </div>
       </section>
     </main>
 
-    <!-- подвал -->
-    <footer class="footer">
+   <!-- подвал -->
+   <footer class="footer">
+    <div class="container">
       <a class="footer-logo-link" href=""
         ><span class="logo-link">Web</span
         ><span class="logo-link-footer">Studio</span></a
@@ -233,8 +250,11 @@
         <a class="footer-address-mail" href="mailto:info@devstudio.com"
           >info@devstudio.com</a
         >
-        <a class="footer-address-tel" href="tel:+380961111111">+380961111111</a>
+        <a class="footer-address-tel" href="tel:+380961111111"
+          >+380961111111</a
+        >
       </address>
-    </footer>
+    </div>
+  </footer>
   </body>
 </html>
