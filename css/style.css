@@ -26,6 +26,7 @@ body {
 }
 
 .footer {
+  text-align: inherit;
   background-color: #2f303a;
 }
 li {
@@ -37,9 +38,13 @@ a {
   color: var(--primary-text-color);
 }
 .container {
-  width: 1200px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+    margin-left: auto;
 
-  outline: 2px solid red;
+  outline: 4px solid blueviolet;
 }
 
 /* скрытие заголовка Преимущества Benefits компании */
@@ -55,8 +60,6 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
 
 /* web  */
 .logo-link {
@@ -78,6 +81,10 @@ a {
 
 .logo,
 .footer-logo-link {
+  display: inline-block;
+margin-top: 60px;
+
+
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
@@ -99,7 +106,7 @@ a {
 
 .nav-list {
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 .logo {
   margin-left: 15px;
@@ -107,9 +114,9 @@ a {
 }
 .list {
   display: flex;
-
 }
-.list-link-index, .list-link {
+.list-link-index,
+.list-link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -118,17 +125,14 @@ a {
   margin-left: 50px;
 }
 
-
 .address {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
 }
 
 .address .address-item + .address-item {
   margin-left: 50px;
-
 }
-
 
 .list-link {
   font-weight: 500;
@@ -189,19 +193,15 @@ a {
   text-align: center;
 }
 
-
 .hero-button {
+  margin-bottom: 200px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  text-align: center;
 
-margin-bottom: 200px;
-margin-top: 30px;
-margin-left: auto;
-margin-right: auto;
-min-width: 200px;
-text-align: center;
-
-outline: 2px solid red;
-
-
+  outline: 2px solid red;
 
   background-color: var(--focus-button-color);
   color: var(--button-text-color);
@@ -222,19 +222,16 @@ outline: 2px solid red;
   background-color: #188ce8;
 }
 .hero-text {
-display: flex;
-justify-content: center;  
-padding-top: 200px;
-padding-bottom: 280px;
-padding-left: 452px;
-padding-right: 452px;
-align-items: center;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
 
-color: var(--button-text-color);
-  outline: 2px solid red;
-}
-  
-  
+  align-items: center;
+
+  color: var(--button-text-color);
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -249,6 +246,33 @@ color: var(--button-text-color);
 
 /* преимущества Benefits компании */
 
+.benefits-container {
+  display: flex;
+  align-items: center;
+  margin-top: 94px;
+  margin-bottom: 0;
+}
+
+/* .benefits-item, .benefits-title, .benefits-text {
+  display: inline-block;
+  display: flex;
+} */
+
+.main-container-images,
+.container-images {
+  display: flex;
+  margin: 0;
+}
+/* .main-container-images .container-images + .container-images {
+  padding-left: auto;
+} */
+
+.main-content-pic {
+  margin-right: 30px;
+}
+.main-content-pic:nth-child(3n) {
+  margin-right: 0;
+}
 .benefits-title {
   font-style: normal;
   font-weight: 700;
@@ -267,6 +291,12 @@ color: var(--button-text-color);
 /* Чем мы занимаемся */
 
 .main-content-caption {
+
+
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -275,22 +305,37 @@ color: var(--button-text-color);
 }
 
 .main-content-pic {
-  width: 370px;
+  display: flex;
+  
+width: 370px;
   height: 294px;
 }
 
 /* Наша команда */
 
 .comand {
-  background-color: var(--comand-color);
+margin-top: 94px;
 }
 .main-content-caption {
+margin-top: 94px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: rebeccapurple;
+}
+.main-content:not(:last-child) {
+  margin-right: 30px;
+}
+
 
 .main-content-avatar {
   width: 270px;
@@ -316,9 +361,14 @@ color: var(--button-text-color);
 
 /* подвал */
 
+
+
 .footer-address {
-  position: bottom;
+  /* position: bottom; */
+  margin-top: 20px;
   width: 231px;
+  text-align: inherit;
+
 }
 
 .footer-address-link {
@@ -379,7 +429,6 @@ color: var(--button-text-color);
   text-align: center;
   cursor: pointer;
   background-color: var(--comand-color);
-
 }
 
 .button:hover,
@@ -409,6 +458,3 @@ color: var(--button-text-color);
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
-
-
-
