@@ -1,4 +1,5 @@
 /* переменные */
+/* переменные */
 
 :root {
   --primary-text-color: #212121;
@@ -7,6 +8,16 @@
   --focus-button-color: #2196f3;
   --button-text-color: #ffffff;
   --comand-color: #f5f4fa;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid red; */
+
 }
 
 body {
@@ -26,11 +37,10 @@ body {
 }
 
 .footer {
-  padding-bottom: 15px;
-  text-align: inherit;
   background-color: #2f303a;
-
-  
+}
+li {
+  list-style-type: none;
 }
 
 a {
@@ -38,26 +48,10 @@ a {
   color: var(--primary-text-color);
 }
 
-h1, h2, h3, h4, h5, h6, p, li, ul {
+h1, h2, h3, h4, h5, h6, p, ul, li {
   margin-top: 0;
   margin-bottom: 0;
-  list-style-type: none;
 }
-.container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-    margin-left: auto;
-
-
-}
-.container-container-header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ECECEC;
-}
-
 /* скрытие заголовка Преимущества Benefits компании */
 .hidden-benefits {
   position: absolute;
@@ -72,7 +66,32 @@ h1, h2, h3, h4, h5, h6, p, li, ul {
   overflow: hidden;
 }
 
-/* web  */
+/* шапка */
+
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+
+}
+.list-link-index .list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+/* лого в шапке */
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+/* logo */
 .logo-link {
   color: var(--focus-button-color);
   font-size: 26px;
@@ -88,74 +107,31 @@ h1, h2, h3, h4, h5, h6, p, li, ul {
   /* цвет шрифта не понятно какой пока !!!!!!!!!!!!!!!!!! */
 }
 
-/* лого в фуктере */
-
-.footer-logo-link {
-  display: inline-block;
-margin-top: 60px;
-
-
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo-link-footer {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo-link-footer {
-  color: var(--button-text-color);
-}
 /* в шапке кнопки навигации*/
-
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-.logo {
-  margin-right: 93px;
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-
-}
 .list {
   display: flex;
   justify-content: center;
-  /* margin-top: 94px;
-  margin-bottom: 50px; */
-  
 }
-
 .list .list-item + .list-item {
   margin-left: 8px;
 }
 
-
-
-.list-link-index,
-.list-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .list .nav-item + .nav-item {
   margin-left: 50px;
+
+}
+
+/* address header */
+
+.header-container {
+ 
 }
 
 .address {
   display: flex;
   margin-left: auto;
-}
 
+}
 .address .address-item + .address-item {
   margin-left: 50px;
 }
@@ -219,21 +195,25 @@ margin-top: 60px;
   text-align: center;
 }
 
+.hero-text {
+padding-top: 200px;
+margin-left: auto;
+margin-right: auto;
+color: var(--button-text-color);
+}
+
 .hero-button {
-  margin-bottom: 200px;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
-  text-align: center;
+margin-top: 30px;
+margin-bottom: 200px;
 
 
-  background-color: var(--focus-button-color);
+background-color: var(--focus-button-color);
   color: var(--button-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.06em; cursor: pointer;
+  letter-spacing: 0.06em;
+  cursor: pointer;
   font-style: normal;
 
   align-items: center;
@@ -246,14 +226,6 @@ margin-top: 60px;
   background-color: #188ce8;
 }
 .hero-text {
-  margin: 0;
-  justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 30px;
-
-  align-items: center;
-
-
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -268,38 +240,12 @@ margin-top: 60px;
 
 /* преимущества Benefits компании */
 
-.benefits-container {
+.benefits-list {
   display: flex;
-  align-items: center;
   margin-top: 94px;
-  margin-bottom: 0;
+
 }
 
-/* .benefits-item, .benefits-title, .benefits-text {
-  display: inline-block;
-  display: flex;
-} */
-
-.container-images {
-  padding-top: 94px;
-}
-
-.main-container-images,
-.container-images {
-  display: flex;
-  margin: 0;
-  justify-content: center;
-}
-/* .main-container-images .container-images + .container-images {
-  padding-left: auto;
-} */
-
-.main-content-pic {
-  margin-right: 30px;
-}
-.main-content-pic:nth-child(4n) {
-  margin-right: 0;
-}
 .benefits-title {
   font-style: normal;
   font-weight: 700;
@@ -308,6 +254,8 @@ margin-top: 60px;
   text-transform: uppercase;
 }
 .benefits-text {
+  padding-top: 10px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -315,14 +263,18 @@ margin-top: 60px;
   color: var(--secondary-text-color);
 }
 
+.benefits-list .benefits-item + .benefits-item {
+  margin-left: 30px;
+}
+
 /* Чем мы занимаемся */
+
+.main-container {
+  margin-top: 94px;
+}
 
 .main-content-caption {
 
-
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 94px;
 
   font-style: normal;
   font-weight: 700;
@@ -330,21 +282,51 @@ margin-top: 60px;
   line-height: 1.16;
   text-align: center;
 }
+.content-pic {
+  display: flex;
+
+}
+
+.content-pic-item {
+  display: flex;
+  margin-left: 30px;
+
+}
+.content-pic-item:first-child {
+  margin-left: 0;
+}
+
+/* .content-pic-item {
+  margin-right: 30px;
+}
+.content-pic-item:last-child {
+  margin-right: 0;
+} */
+
+
+.content-pic-item .main-content-pic + .main-content-pic {
+  margin-left: 30px;
+}
 
 .main-content-pic {
-  display: flex;
-  
-width: 370px;
+  width: 370px;
   height: 294px;
 }
 
 /* Наша команда */
 
+.comand-container {
+  margin-top: 94px;
+}
+
+
 .comand {
-margin-top: 94px;
+  background-color: var(--comand-color);
 }
 .main-content-caption {
-margin-top: 94px;
+  padding-top: 94px;
+
+
 
   font-style: normal;
   font-weight: 700;
@@ -353,18 +335,23 @@ margin-top: 94px;
   text-align: center;
 }
 
-.main-content {
+.comand-list {
   display: flex;
-
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
-.main-content .main-content-item + .main-content-item {
-  margin-right: 30px;
-}
-/* .main-content:not(:last-child) {
-  margin-right: 30px;
-} */
+.comand-item {
 
+
+}
+.comand-list .comand-item + .comand-item {
+  margin-left: 30px;
+}
+
+.main-content-title, .main-content-text {
+  text-align: center;
+}
 
 .main-content-avatar {
   width: 270px;
@@ -391,14 +378,43 @@ margin-top: 94px;
 /* подвал */
 
 
+.footer-container {
+  /* margin-top: 94px; */
 
+}
+
+/* лого в фуктере */
+
+
+.footer-logo-link {
+display: flex;
+padding-top: 60px;
+
+
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-link-footer {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-link-footer {
+  color: var(--button-text-color);
+}
 .footer-address {
-  /* position: bottom; */
-  margin-top: 20px;
-  width: 231px;
-  text-align: inherit;
+  padding-top: 20px;
+  padding-bottom: 60px;
   
-
+  position: bottom;
+  width: 231px;
 }
 
 .footer-address-link {
@@ -459,6 +475,7 @@ margin-top: 94px;
   text-align: center;
   cursor: pointer;
   background-color: var(--comand-color);
+
 }
 
 .button:hover,
@@ -468,45 +485,42 @@ margin-top: 94px;
 }
 
 /* галерея - примеры работ */
-
-/* .gallery {
-background-color: green;} */
-.gallery-item {
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 30px;
-
-  
-
 }
 
-.gallery-list:nth-child(3n){
+.gallery-list {
+  margin-top: 34px;
+  width: calc((100%-60px)/3);
+
+
+  /* outline: 2px solid green; */
+}
+
+.gallery-list:nth-child(3n) { 
   margin-right: 0;
 }
-.gallery-list {
-margin-top: 30px;
-
-
-  width: 370px;
-  height: 404px;
-  border: 1px solid #EEEEEE;
-  
+/* .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;  
 }
-/* .gallery-image:nth-last-child(-n+6) {
-  margin-top: 30px;
+
+.gallery-list {
+  margin: 15px;
+  width: 370px;
 } */
 
-.gallery-container {
-  padding-top: 20px;
-  /* margin-top: 30px; */
-}
 .gallery-image {
-
   width: 370px;
   height: 294px;
 }
+
 .gallery-caption {
+  padding-top: 20px;
+  padding-left: 24px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -515,9 +529,14 @@ margin-top: 30px;
 }
 
 .gallery-text {
+padding-top: 4px;
+padding-left: 24px;
+
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
+
