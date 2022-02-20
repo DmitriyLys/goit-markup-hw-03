@@ -16,7 +16,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 
 }
 
@@ -379,7 +379,7 @@ background-color: var(--focus-button-color);
 
 
 .footer-container {
-  /* margin-top: 94px; */
+  margin-top: 94px;
 
 }
 
@@ -457,6 +457,9 @@ padding-top: 60px;
 }
 
 /* кнопки фильтры */
+.list-gallery {
+  margin-top: 94px;
+}
 
 .button-active {
   background: var(--focus-button-color);
