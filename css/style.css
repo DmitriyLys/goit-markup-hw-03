@@ -34,6 +34,7 @@ body {
 }
 .comand {
   background-color: var(--comand-color);
+  padding-top: 94px;
 }
 
 .footer {
@@ -202,8 +203,7 @@ padding-bottom: 200px;
 }
 
 .hero-text {
-/* padding-top: 200px;
-padding-bottom: 280px; */
+
 margin-left: auto;
 margin-right: auto;
 color: var(--button-text-color);
@@ -211,7 +211,6 @@ color: var(--button-text-color);
 
 .hero-button {
 margin-top: 30px;
-/* margin-bottom: 200px; */
 
 
 background-color: var(--focus-button-color);
@@ -248,11 +247,13 @@ background-color: var(--focus-button-color);
 /* преимущества Benefits компании */
 .benefits {
   padding-top: 94px;
+
+  /* outline: 2px solid salmon; */
+
 }
 
 .benefits-list {
   display: flex;
-  /* margin-top: 94px; */
 
 }
 
@@ -264,7 +265,7 @@ background-color: var(--focus-button-color);
   text-transform: uppercase;
 }
 .benefits-text {
-  padding-top: 10px;
+  margin-top: 10px;
 
   font-style: normal;
   font-weight: 400;
@@ -351,12 +352,13 @@ background-color: var(--focus-button-color);
   padding-bottom: 94px;
 }
 
-.comand-item {
 
-
-}
 .comand-list .comand-item + .comand-item {
   margin-left: 30px;
+}
+
+.main {
+  padding-top: 94px;
 }
 
 .main-content-title, .main-content-text {
@@ -388,10 +390,10 @@ background-color: var(--focus-button-color);
 /* подвал */
 
 
-.footer-container {
+/* .footer-container {
   margin-top: 94px;
 
-}
+} */
 
 /* лого в фуктере */
 
@@ -481,6 +483,8 @@ padding-top: 60px;
   color: var(--button-text-color);
 }
 .button {
+border-radius: 4%;
+border-width: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
