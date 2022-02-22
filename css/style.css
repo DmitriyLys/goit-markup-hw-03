@@ -11,7 +11,7 @@
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -41,6 +41,9 @@ body {
 }
 li {
   list-style-type: none;
+}
+ul {
+  padding-left: 0;
 }
 
 a {
@@ -75,7 +78,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 
 }
-.list-link-index .list-link {
+.list-link-index, .list-link, .list-link-portfolio {
+    display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -123,8 +127,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* address header */
 
-.header-container {
- 
+.header {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .address {
@@ -193,10 +197,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   background-color: #2f303a;
   align-items: center;
   text-align: center;
+  padding-top: 200px;
+padding-bottom: 280px;
 }
 
 .hero-text {
-padding-top: 200px;
+/* padding-top: 200px;
+padding-bottom: 280px; */
 margin-left: auto;
 margin-right: auto;
 color: var(--button-text-color);
@@ -204,7 +211,7 @@ color: var(--button-text-color);
 
 .hero-button {
 margin-top: 30px;
-margin-bottom: 200px;
+/* margin-bottom: 200px; */
 
 
 background-color: var(--focus-button-color);
