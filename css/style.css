@@ -246,10 +246,13 @@ background-color: var(--focus-button-color);
 }
 
 /* преимущества Benefits компании */
+.benefits {
+  padding-top: 94px;
+}
 
 .benefits-list {
   display: flex;
-  margin-top: 94px;
+  /* margin-top: 94px; */
 
 }
 
