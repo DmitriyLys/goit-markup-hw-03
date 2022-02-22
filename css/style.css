@@ -45,6 +45,7 @@ li {
 }
 ul {
   padding-left: 0;
+  padding: 0;
 }
 
 a {
@@ -116,6 +117,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .list {
   display: flex;
   justify-content: center;
+  
 }
 .list .list-item + .list-item {
   margin-left: 8px;
@@ -211,7 +213,11 @@ color: var(--button-text-color);
 
 .hero-button {
 margin-top: 30px;
-
+border-radius: 4px;
+border-width: inherit;
+padding-left: 0;
+padding-right: 0;
+width: 200px;
 
 background-color: var(--focus-button-color);
   color: var(--button-text-color);
@@ -326,13 +332,12 @@ background-color: var(--focus-button-color);
 
 /* Наша команда */
 
-.comand-container {
-  margin-top: 94px;
-}
+
 
 
 .comand {
   background-color: var(--comand-color);
+  padding-top: 94px;
 }
 .main-content-caption {
   padding-top: 94px;
@@ -470,10 +475,12 @@ padding-top: 60px;
 
 /* кнопки фильтры */
 .list-gallery {
-  margin-top: 94px;
-}
+padding-bottom: 94px;}
 
 .button-active {
+border: none;
+border-radius: 4px;
+
   background: var(--focus-button-color);
   font-style: normal;
   font-weight: 500;
@@ -483,8 +490,9 @@ padding-top: 60px;
   color: var(--button-text-color);
 }
 .button {
-border-radius: 4%;
-border-width: inherit;
+  border: none;
+  border-radius: 4px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
