@@ -35,6 +35,7 @@ body {
 .comand {
   background-color: var(--comand-color);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .footer {
@@ -284,16 +285,18 @@ background-color: var(--focus-button-color);
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
-
+.benefits-item {
+  width: 270px;
+}
 .benefits-list .benefits-item + .benefits-item {
   margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
 
-.main-container {
+/* .main-container {
   margin-top: 94px;
-}
+} */
 
 .main-content-caption {
 
@@ -308,9 +311,13 @@ background-color: var(--focus-button-color);
   display: flex;
 
 }
+.main-content-pic {
+  display: block;
+}
 
 .content-pic-item {
   display: flex;
+
   margin-left: 30px;
 
 }
@@ -345,7 +352,8 @@ background-color: var(--focus-button-color);
   padding-top: 94px;
 }
 .main-content-caption {
-  padding-top: 94px;
+  /* padding-top: 94px; */
+  margin-bottom: 50px;
 
 
 
@@ -358,8 +366,10 @@ background-color: var(--focus-button-color);
 
 .comand-list {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 94px;
+ 
+}
+.coment-foto {
+  padding-top: 30px;
 }
 
 
@@ -369,6 +379,8 @@ background-color: var(--focus-button-color);
 
 .main {
   padding-top: 94px;
+  padding-bottom: 94px;
+
 }
 
 .main-content-title, .main-content-text {
@@ -376,6 +388,9 @@ background-color: var(--focus-button-color);
 }
 
 .main-content-avatar {
+
+  display: block;
+
   width: 270px;
   height: 260px;
 }
@@ -389,6 +404,9 @@ background-color: var(--focus-button-color);
 }
 
 .main-content-text {
+
+  padding-top: 10px;
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
