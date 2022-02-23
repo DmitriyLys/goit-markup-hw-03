@@ -73,7 +73,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* шапка */
 
-
+.all-header {
+  display: flex;
+  align-items: center;
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -137,6 +140,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 .address {
   display: flex;
   margin-left: auto;
+  justify-content: end;
+
 
 }
 .address .address-item + .address-item {
